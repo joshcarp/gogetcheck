@@ -1,0 +1,18 @@
+name: 'Go Get Check'
+description: 'Runs go get to verify go modules are valid in a non cached environment'
+author: 'joshcarp'
+inputs:
+    package:
+        description: 'package to install'
+        required: true
+        default: ${{ github.repository }}
+    hash:
+        description: 'reference to install'
+        required: false
+        default: ${{ github.sha }}
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+branding:
+    icon: 'pie-chart'
+    color: 'gray-dark'
