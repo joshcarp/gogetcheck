@@ -14,7 +14,7 @@ runs:
     using: 'docker'
     image: 'Dockerfile'
     args:
-        - ${{ inputs.package }}@${{ inputs.hash }}
+        - github.com/${{ inputs.package }}@${{ inputs.hash }}
 branding:
     icon: 'pie-chart'
     color: 'gray-dark'
