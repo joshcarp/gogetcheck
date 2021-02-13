@@ -1,3 +1,3 @@
 #!/bin/bash
 
-go get $1
+go get $PACKAGE
