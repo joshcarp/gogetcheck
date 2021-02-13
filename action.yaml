@@ -13,6 +13,8 @@ inputs:
 runs:
     using: 'docker'
     image: 'Dockerfile'
+    args:
+        - ${{ inputs.package }}@${{ inputs.hash }}
 branding:
     icon: 'pie-chart'
     color: 'gray-dark'
