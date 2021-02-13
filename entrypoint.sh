@@ -1,3 +1,3 @@
 #!/bin/bash
 
-go get ${PACKAGE}@${HASH}
+go get $1
