@@ -15,3 +15,4 @@ jobs:
                   WITH_V: true
                   DEFAULT_BUMP: minor
                   RELEASE_BRANCHES: main
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
