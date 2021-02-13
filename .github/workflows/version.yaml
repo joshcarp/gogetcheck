@@ -14,3 +14,4 @@ jobs:
               env:
                   WITH_V: true
                   DEFAULT_BUMP: minor
+                  RELEASE_BRANCHES: main
