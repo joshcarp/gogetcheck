@@ -1,7 +1,7 @@
 name: tag latest
 on:
-    release:
-        types: [published, edited]
+    push:
+        tags: [v*]
 
 jobs:
     latest:
